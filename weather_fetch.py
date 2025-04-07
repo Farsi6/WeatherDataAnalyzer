@@ -1,6 +1,6 @@
 import requests
 
-api_key = "a345bdfd49b8ae9c60b5acdc7ac7f5f4"  # Replace with your OpenWeatherMap API key
+api_key = "your API key here"  # Replace with your OpenWeatherMap API key
 city = "Bahawalnagar"
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 response = requests.get(url)

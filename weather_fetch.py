@@ -2,7 +2,7 @@ import requests
 import csv
 
 api_key = "a345bdfd49b8ae9c60b5acdc7ac7f5f4"  # Replace with your OpenWeatherMap API key
-city = "Lahore"
+city = input("Enter City Name to check temperature: ")
 url = f"http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric"
 response = requests.get(url)
 if response.status_code == 200:
